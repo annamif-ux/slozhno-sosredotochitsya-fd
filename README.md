@@ -1,0 +1,1 @@
+git@github.com:annamif-ux/slozhno-sosredotochitsya-fd.git
