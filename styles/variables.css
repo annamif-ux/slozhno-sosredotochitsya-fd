@@ -1,14 +1,10 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --title-text-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-text-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --bg-color: #000028;
   --accent-bg-text-color: #000028;
   --title-color: #db00ff;
-  --accent-color: #ff0070; 
+  --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --decorated-zone-color: #ff0070;
   --bg-image: url("../images/cover-image-dark.png");
