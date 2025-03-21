@@ -13,6 +13,7 @@
   background-position: center;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
+  overflow-x: hidden;
 }
 
 .decorated-zone {
@@ -250,14 +251,7 @@
     min-block-size: 1024px;
   }
   
-  .decorated-zone::before {
-    padding-inline-start: 20px;
-  }
 
-  .decorated-zone::after {
-    padding-inline-end: 20px;
-  }
-  
   .rec-bulb-icon {
   }
 
@@ -267,6 +261,10 @@
 
   .heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    align-self: center;
+  }
+
+  .header__title {
     margin-inline-start: -20px;
   }
 
@@ -343,5 +341,38 @@
     margin-block-start: 0;
   }
 
-  
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: var(--padding);
+    margin-block-end: calc(var(--padding) * 3);
+    grid-auto-flow: dense;
+  }
+
+  .sunset {
+    grid-column: span 2;
+  }
+
+  .ice-cream {
+    grid-column: 3;
+    grid-row: span 2;
+  }
+
+  .tape {
+    grid-column: 1;
+    grid-row: span 2;
+  }
+
+  .street {
+   grid-column: 2 / 4;
+  }
+
+  .decorated-zone::before {
+    left: 0;
+  }
+
+  .footer__title {
+    align-self: center;
+  }
+
 }
