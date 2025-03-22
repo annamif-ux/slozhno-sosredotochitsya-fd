@@ -46,8 +46,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: 668px;
-  block-size: 100vh;
+  min-block-size: 41.8rem;
   position: relative;
 }
 
@@ -117,10 +116,6 @@
   line-height: 1;
 }
 
-.header__theme-menu-button_active {
-  pointer-events: none;
-}
-
 .header__theme-menu-button:focus {
   outline: none;
 }
@@ -134,9 +129,9 @@
   border: 1px solid var(--hover-color);
 }
 
-.header__theme-menu-button:active {
+.header__theme-menu-button_active {
+  pointer-events: none;
   border: 1px solid var(--decorated-zone-color);
-  cursor: default;
 }
 
 .header__theme-menu-button:disabled {
@@ -216,7 +211,7 @@
 
 .image {
   display: block;
-  max-inline-size: 100%;
+  inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
 }
@@ -226,15 +221,12 @@
   display: flex;
   flex-direction: center;
   place-items: center;
-  min-block-size: 668px;
-  block-size: 100vh;
+  min-block-size: 41.8rem;
   margin-block-start: 40px;
 }
 
 .footer__title {
   text-shadow: 0.125rem 0.125rem 0 var(--accent-color);
-  padding-inline-start: 4px;
-  padding-block-start: 4px;
 }
 
 @media (width >= 768px) {
@@ -259,11 +251,6 @@
 
   .rec-bulb-icon::after {
     left: 10px;
-  }
-
-
-  .header__theme-menu {
-    margin-block-start: 0;
   }
 
   .heading {
@@ -374,9 +361,6 @@
   justify-content: center;
 }
 
-  .footer__title {
-    align-self: center;
-  }
 }
 
 @media (width >= 1024px) {
@@ -387,7 +371,7 @@
 
   .header,
   .footer {
-    min-block-size: 768px;
+    min-block-size: 48rem;
   }
 
  .header__theme-menu {
@@ -402,25 +386,23 @@
   .heading {
     align-self: center;
   }
-
-  .content-section-why-how .section-title {
-    inline-size: 315px;
-  }
+ 
+  .content-section-why-how .section-title { 
+    inline-size: 19.69rem; 
+  } 
 
   .content-section-why-how .content-section__item,
   .content-section-why-how .content-section__thin {
-    inline-size: 649px;
+    inline-size: 40.6rem;
   }
-
-  .content-section:nth-of-type(3) {
-    margin-block-start: 0px;
-  }
+  
   .section-what {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content 1fr;
     column-gap: var(--padding);
     align-items: start;
+    inline-size: 61.5rem;
   }
 
   .section-what .content-section__item {

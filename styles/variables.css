@@ -9,4 +9,5 @@
   --decorated-zone-color: #ff0070;
   --bg-image: url("../images/cover-image-dark.png");
   --padding: clamp(0.625rem, 0.029rem + 2.545vi, 1.25rem);
+  --hover-color: color(from var(--decorated-zone-color) srgb r g b / 0.4);
 }
