@@ -13,7 +13,6 @@
   background-position: center;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
-  overflow-x: hidden;
 }
 
 .decorated-zone {
@@ -53,7 +52,7 @@
 }
 
 .heading {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--title-text-mobile);
   font-weight: 800;
   line-height: 82.5%;
   color: var( --title-color);
@@ -99,7 +98,6 @@
   align-self: center;
   text-align: center;
   color: var(--decorated-zone-color);
-  margin-block-start: 5px;
 }
 
 .header__theme-menu-list {
@@ -119,6 +117,10 @@
   line-height: 1;
 }
 
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
 .header__theme-menu-button:focus {
   outline: none;
 }
@@ -134,7 +136,6 @@
 
 .header__theme-menu-button:active {
   border: 1px solid var(--decorated-zone-color);
-  pointer-events: none;
   cursor: default;
 }
 
@@ -223,7 +224,7 @@
 .footer {
   position: relative;
   display: flex;
-  flex-direction: space-between;
+  flex-direction: center;
   place-items: center;
   min-block-size: 668px;
   block-size: 100vh;
@@ -252,7 +253,6 @@
     margin-block-start: 0;
   }
   
-
   .rec-bulb-icon {
     right: var(--padding);
   }
@@ -284,15 +284,13 @@
   .content {
     display: grid;
     row-gap: 80px;
+    margin-block-start: 60px;
   }
 
-  .content-section-why {
+  .content-section-why-how {
     display: grid;
     grid-template-columns: 1fr 2fr;
-  }
-
-  .content-section-why .section-title {
-    padding-block-start: 10px;
+    gap: var(--padding);
   }
 
   .content-section-what {
@@ -311,21 +309,16 @@
   .content-section-what .section-title {
     margin-block-start: 0;
   }
-  
-  .content-section-how {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
 
-  .content-section-how .section-title {
+  .content-section-why-how .section-title {
     margin-block-start: 0;
   }
 
-  .content-section-how .content-section__item {
+  .content-section-why-how .content-section__item {
     margin-block-start: 0;
   }
 
-  .content-section-how .title-decor {
+  .content-section-why-how .title-decor {
     align-self: flex-start;
   }
 

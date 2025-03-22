@@ -16,7 +16,7 @@
   --text-color: #f1b2ce;
   --decorated-zone-color: #ff0070;
   --bg-image: url("../images/cover-image-dark.png");
-  --hover-cover: color(from var(--decorated-zone-color) srgb r g b / 0.4);
+  --hover-color: color(from var(--decorated-zone-color) srgb r g b / 0.4);
 }
 
 .theme-dark .page {
