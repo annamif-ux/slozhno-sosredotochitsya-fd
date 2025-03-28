@@ -219,7 +219,7 @@
 .footer {
   position: relative;
   display: flex;
-  flex-direction: center;
+  justify-content: center;
   place-items: center;
   min-block-size: 41.8rem;
   margin-block-start: 40px;
@@ -367,6 +367,7 @@
   .page {
     padding-inline-start: var(--padding);
     padding-inline-end: var(--padding);
+    overflow-x: hidden;
   }
 
   .header,
@@ -402,7 +403,6 @@
     grid-template-rows: min-content 1fr;
     column-gap: var(--padding);
     align-items: start;
-    inline-size: 61.5rem;
   }
 
   .section-what .content-section__item {
