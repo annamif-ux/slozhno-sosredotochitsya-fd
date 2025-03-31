@@ -230,11 +230,6 @@
 }
 
 @media (width >= 768px) {
-  .page {
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
-  }
-
   .header {
     padding: 20px 0;
   }
