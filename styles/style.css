@@ -283,7 +283,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    inline-size: calc(100vw - 40px);
   }
 
   .content-section-what .content-section__item {
